@@ -216,6 +216,8 @@ namespace appbase {
          auto& get_priority_queue() {
             return pri_queue;
          }
+         
+         const bpo::variables_map& get_options() const;
 
       protected:
          template<typename Impl>
